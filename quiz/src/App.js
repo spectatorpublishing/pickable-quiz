@@ -9,8 +9,7 @@ class App extends Component {
         <Question>
           
         </Question>
-        <AnswerBox></AnswerBox>
-
+        
       </div>
     );
   }
