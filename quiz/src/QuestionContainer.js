@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
-import Question from "./Question";
+import Question from "./Components/Question";
 
 class QuestionContainer extends Component {
   render() {
