@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
-import Question from './Components/Question.js';
-import AnswerBox from './Components/AnswerBox.js';
+import QuestionContainer from './QuestionContainer';
+import Answers from './Answers.js'
 
 class App extends Component {
+  
   render() {
+    
     return (
       <div>
-        <Question>
-          
-        </Question>
-        <AnswerBox></AnswerBox>
-
+        <QuestionContainer/>
+        <Answers answerImage = { "./testImage.jpeg" } text = { "Netflix And Chill" }></Answers>
       </div>
     );
   }

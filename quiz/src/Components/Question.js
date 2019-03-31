@@ -1,11 +1,30 @@
+import styled from "styled-components";
 import React from 'react';
-import AnswerBox from './AnswerBox'
+import Answers from '../Answers'
 import QuestionBox from './QuestionBox'
 
-
+const AnswerBox = styled.div`
+  width: 90%;
+  margin: 10px;
+  display: flex;
+  @media (max-width: 700px) {
+    flex-direction: column;
+  }
+`
+ 
 const question = (props) => {
-	return (	
+	const answerBox = props.data.answers.map( data =>{
+		return <Answers text = {data.answer} answerImage = {data.img}/>
+	})
 
+	return (	
+		<div>
+		<img src = "../stories/test.jpg"/>
+		<QuestionBox question = {props.data.question}/>
+		<AnswerBox>
+			{answerBox}
+		</AnswerBox>
+		</div>
 	)
 }
 
