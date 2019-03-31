@@ -1,19 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
+import AnswerBox from './AnswerBox'
+import QuestionBox from './QuestionBox'
 
-/*
-const qdiv =  styled.div`
 
-`
-*/
+const question = (props) => {
+	return (	
 
-class Question extends Component {
-  render() {
-    return (
-      <div>
-          Is water wet?
-      </div>
-    );
-  }
+	)
 }
 
-export default Question;
+export default question;
