@@ -15,6 +15,7 @@ color: white;
 
 let Thumbnail = styled.img`
 margin: 10px;
+width: 85%;
 position: relative;
 transition: transform .5s;
 &:hover{

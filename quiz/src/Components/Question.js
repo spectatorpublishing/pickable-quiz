@@ -19,7 +19,6 @@ const question = (props) => {
 
 	return (	
 		<div>
-		<img src = "../stories/test.jpg"/>
 		<QuestionBox question = {props.data.question}/>
 		<AnswerBox>
 			{answerBox}
