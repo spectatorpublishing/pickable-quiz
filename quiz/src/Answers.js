@@ -7,8 +7,8 @@ width: 300px;
 height: 300px;
 position:relative;
 text-align: center;
-
 `
+
 let AnswerText = styled.p`
 font-size: 20px;
 color: white;
@@ -24,10 +24,13 @@ transition: transform .5s;
 `
 
 class Answer extends Component {
+  constructor(props){
+    super(props);
+  }
   render() {
     return (
       <AnswerComp>
-      <AnswerText>Netflix And Chill</AnswerText><Thumbnail src = "./testImage.jpeg"></Thumbnail>
+      <AnswerText>{ this.props.text }</AnswerText><Thumbnail src = { this.props.answerImage }></Thumbnail>
       </AnswerComp>
     );
   }
