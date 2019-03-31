@@ -7,12 +7,14 @@ width: 300px;
 height: 300px;
 position:relative;
 text-align: center;
+border-radius: 3px;
 `
 
 let AnswerText = styled.p`
 font-size: 20px;
 color: white;
 `
+
 let Thumbnail = styled.img`
 margin: 10px;
 position: relative;
