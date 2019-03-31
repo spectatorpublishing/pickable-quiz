@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import Question from './Question.js';
+import QuestionContainer from './QuestionContainer';
+import Answers from './Answers.js'
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Question>
-          
-        </Question>
+        <QuestionContainer/>
+        <Answers/>
       </div>
     );
   }
