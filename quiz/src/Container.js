@@ -266,7 +266,7 @@ class QuestionSelectWrapper extends Component {
   }
 
   render() {
-    return <Question select={this.select} questionData={this.props.questionData}>{this.props.children}</Question>
+    return <Question {...this.props} select={this.select}/>
   }
 }
 
@@ -274,18 +274,19 @@ class Container extends Component {
 
   constructor() {
     super()
+    this.state = {}
     this.select = this.select.bind(this)
   }
 
   select(question) {
     return (answer) => {
-      this.setState({[question]: answer}, () => console.log(this.state))
+      this.setState({[question]: answer})
     }
   }
 
   render() {
     return (
-      QuestionData.map((i, index) => <QuestionSelectWrapper select={this.select} question={index} questionData={i}/>)
+      QuestionData.map((i, index) => <QuestionSelectWrapper active={this.state[index]} select={this.select} question={index} questionData={i}/>)
     );
   }
 }
