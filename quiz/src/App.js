@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Answers from './Answers.js';
-import Header from './Header.js';
+import Container from './Container';
+import Answers from './Answers.js'
 
 class App extends Component {
   
@@ -9,8 +9,8 @@ class App extends Component {
     return (
       <Header/>
       <div>
-        <QuestionContainer/>
-        <Answers answerImage = { "./testImage.jpeg" } text = { "Netflix And Chill" }></Answers>
+        <Container/>
+        <Answers/>
       </div>
     );
   }
