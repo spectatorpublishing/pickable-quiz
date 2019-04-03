@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
 
-const qdiv =  styled.div`
+const StyledQuestion = styled.div`
+  font-size: 2rem;
+  margin-top: 1rem;
+  font-weight: 100;
+`
 
+const StyledAnswer = styled.div`
+  font-weight: ${props => props.index === props.active ? 700 : 100};
 `
 
 class AnswerClickWrapper extends Component {
@@ -12,11 +18,11 @@ class AnswerClickWrapper extends Component {
   }
 
   handleClick(e) {
-    this.props.onClick(this.props.type)
+    this.props.onClick(this.props.index)
   }
 
   render() {
-    return <div onClick={this.handleClick}>{this.props.children}</div>
+    return <StyledAnswer {...this.props} onClick={this.handleClick}>{this.props.children}</StyledAnswer>
   }
 }
 
@@ -34,10 +40,10 @@ class Question extends Component {
   render() {
     return (
       <div>
-          <div>{this.props.questionData.questionText}</div>
+          <StyledQuestion>{this.props.questionData.questionText}</StyledQuestion>
           <div>
             {this.props.questionData.answers.map((i, index) => {
-              return <AnswerClickWrapper type={i.type} onClick={this.handleClick}>{i.text}</AnswerClickWrapper>
+              return <AnswerClickWrapper {...this.props} index={index} onClick={this.handleClick}>{i.text}</AnswerClickWrapper>
             })}
           </div>
       </div>
