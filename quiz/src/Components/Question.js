@@ -24,6 +24,10 @@ flex-wrap: wrap;
 justify-content: space-evenly;
 `
 
+const PreviewAnswer = styled.div`
+  height: 2rem;
+`
+
 class AnswerClickWrapper extends Component {
   constructor() {
     super()
@@ -72,9 +76,22 @@ class Question extends Component {
   }
 
   render() {
+    let answer = this.props.questionData.answers.filter((_, index) => 
+      index===this.state.hover
+    )
+
+    if (this.state.hover === -1){
+      answer = this.props.questionData.answers.filter((_, index) => 
+        index===this.props.active
+      )
+    }
+
+    answer = answer.length ? <PreviewAnswer>{answer[0].text}</PreviewAnswer>: <PreviewAnswer/>
+
     return (
       <div>
           <StyledQuestion>{this.props.questionData.questionText}</StyledQuestion>
+          {answer}
           <AnswersContainer>
             {this.props.questionData.answers.map((i, index) => {
               return <AnswerClickWrapper {...i} index={index} onClick={this.handleClick}
