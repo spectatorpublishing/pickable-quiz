@@ -333,7 +333,6 @@ class Container extends Component {
   select(question) {
     return (answer) => {
       this.setState({[question]: answer})
-      console.log(this.state["9"])
     }
   }
 
@@ -351,7 +350,7 @@ class Container extends Component {
          QuestionData.map((i, index) => <QuestionSelectWrapper active={this.state[index]} select={this.select} question={index} questionData={i}/>),
          this.renderResults()
          ]
-    );
+   )
   }
 }
 
