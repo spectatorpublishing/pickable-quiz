@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
 import Question from "./Components/Question";
+import Results from "./Results.js"
 
 let QuestionData = [
    {
@@ -326,17 +327,25 @@ class Container extends Component {
     super()
     this.state = {}
     this.select = this.select.bind(this)
+    this.renderResults = this.renderResults.bind(this)
   }
 
   select(question) {
     return (answer) => {
       this.setState({[question]: answer})
+      console.log(this.state)
     }
   }
 
+  renderResults() {
+
+  }
+
   render() {
-    return (
-      QuestionData.map((i, index) => <QuestionSelectWrapper active={this.state[index]} select={this.select} question={index} questionData={i}/>)
+    return ([
+         QuestionData.map((i, index) => <QuestionSelectWrapper active={this.state[index]} select={this.select} question={index} questionData={i}/>),
+         <Results/>
+         ]
     );
   }
 }
