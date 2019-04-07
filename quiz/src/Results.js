@@ -6,7 +6,8 @@ flex: 1;
 flex-direction: column;
 background-color: #EC2058;
 justify-content: center;
-width: 700px;
+width: 70vw;
+margin: auto;
 height: 300px;
 padding: 20px;
 border-radius: 10px;
@@ -75,7 +76,7 @@ const Pickable = styled.button`
   -webkit-transition: 0.5s;
   display: block;
   &:hover{
-    width: 100%;
+    width: 90%;
     padding: 20px;
 
   }
