@@ -1,62 +1,110 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
+const Container = styled.div`
+flex: 1;
+flex-direction: column;
+background-color: #EC2058;
+justify-content: center;
+width: 700px;
+height: 300px;
+padding: 20px;
+border-radius: 10px;
+`
+
+const Title = styled.div`
+text-align: center;
+margin-bottom: 20px;
+padding: 10px;
+width: 100%;
+color: white;
+font-size: 2rem;
+font-weight: bold;
+`
+
+const PictureContainer = styled.div`
+display: flex;
+align-items: center;
+justify-content: center;
+height: auto;
+`
+
+const ImageContainer = styled.div`
+height: 200px;
+width: 50%;
+background-image: url("${props => props.image}");
+border-radius: 10px;
+`
+
+const CaptionContainer = styled.div`
+width: 50%;
+padding: 15px;
+flex: 1;
+flex-direction: column;
+align-items: center;
+color: white;
+`
+
+const Description = styled.div`
+height: 50%;
+padding: 0 15px 20px 15px;
+width: 100%;
+font-size: 1rem;
+`
+
+const ButtonContainer = styled.div`
+height: 40%;
+display: block;
+`
+
+const Pickable = styled.button`
+  background-color:transparent;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  border-radius:10px;
+  border:4px solid #ffffff;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:19px;
+  padding: 10px;
+  width: 80%;
+  margin: auto;
+  text-decoration:none;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  display: block;
+  &:hover{
+    width: 100%;
+    padding: 20px;
+
+  }
+`
+
 class Results extends Component {
 
     render() {
         return (
-            <div style = {{
-              flex: 1,
-              flexDirection: 'column',
-              backgroundColor: '#EC2058',
-              alignItems: 'stretch',
-              justifyContent: 'center',
-              width: 700,
-              height: 300,
-            }}>
-                <div style = {{alignItems: 'center', padding: 10}}>
+            <Container>
+                <Title>
                     {this.props.title}
-                </div>
-                <div style = {{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                    {/* the part below the title */}
-                    <div style = {{height: 200, backgroundImage: 'url("https://www.travelwyoming.com/sites/default/files/uploads/consumer/7-18_MedicineBowHikingFishing_KL_0708_3298.jpg")', backgroundSize: 'contain' ,width: '46%', margin: '2%', padding: 15}}>
-                        {/*photo */}
-                        {/* <img style = {{width: '100%'}} src = "https://www.travelwyoming.com/sites/default/files/uploads/consumer/7-18_MedicineBowHikingFishing_KL_0708_3298.jpg" alt = {this.props.imgAlt} /> */}
-                    </div>
-                    <div style = {{width: '50%', padding: 15, flex: 1, flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
-                        {/* description box */}
-                        <div style = {{height: '60%', paddingBottom: 10}}>{this.props.description}</div>
-                        <div style = {{height: '40%'}}>
-                            <button
-                              raised
-                              onPress={test}
-                              title="Try out Pickable!"
-                              buttonStyle={{width:145,height:45,borderRadius:25}}
-                              color="#841584"
-                              type="outline"
-                              accessibilityLabel="Try out Pickable"
-                              />
-                        </div>
-                    </div>
-                </div>
-            </div>
+                </Title>
+                <PictureContainer>
+                    <ImageContainer image={this.props.image}/>
+                    <CaptionContainer>
+                        <Description>
+                          {this.props.description}
+                        </Description>
+                        <ButtonContainer>
+                            <Pickable>
+                              Try out Pickable!
+                            </Pickable>
+                        </ButtonContainer>
+                    </CaptionContainer>
+                </PictureContainer>
+            </Container>
         )
     }
-}
-
-/* const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    flexDirection: 'column',
-    backgroundColor: '#EC2058',
-    alignItems: 'stretch',
-    justifyContent: 'center',
-    width: 700,
-  },
-}); */
-
-var test = function() {
-  console.log('hellow');
 }
 
 export default Results;
