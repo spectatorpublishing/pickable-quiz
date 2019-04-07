@@ -9,23 +9,26 @@ const StyledQuestion = styled.div`
   display: block;
   max-width: 80rem;
   text-align: center;
-  margin: 2rem auto;
+  margin: 2rem auto 1rem auto;
 `
 
 const StyledAnswer = styled.div`
-box-sizing: border-box;
-  font-weight: ${props => props.index === props.active ? 700 : 100};
+  box-sizing: border-box;
 `
 
 const AnswersContainer = styled.div`
-width: 100%;
-display: flex;
-flex-wrap: wrap;
-justify-content: space-evenly;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 `
 
 const PreviewAnswer = styled.div`
   height: 2rem;
+  font-size: 1.5rem;
+  font-weight: 100;
+  text-align: center;
+  margin: 0 auto 1rem auto;
 `
 
 class AnswerClickWrapper extends Component {
