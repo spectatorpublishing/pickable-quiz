@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import styled from "styled-components";
 
 let AnswerComp = styled.div`
-height: 300px;
 text-align: center;
 `
 
