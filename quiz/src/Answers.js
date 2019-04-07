@@ -2,12 +2,8 @@ import React, { Component } from 'react';
 import styled from "styled-components";
 
 let AnswerComp = styled.div`
-background-color: red;
-width: 300px;
 height: 300px;
-position:relative;
 text-align: center;
-border-radius: 3px;
 `
 
 let AnswerText = styled.p`
@@ -16,7 +12,9 @@ color: white;
 `
 
 let Thumbnail = styled.img`
-margin: 10px;
+box-sizing: border-box;
+padding: 10px;
+width: 100%;
 position: relative;
 transition: transform .5s;
 &:hover{
@@ -32,7 +30,7 @@ class Answer extends Component {
   render() {
     return (
       <AnswerComp>
-      <AnswerText>{ this.props.text }</AnswerText><Thumbnail src = { this.props.answerImage }></Thumbnail>
+      <Thumbnail src = { this.props.answerImage }></Thumbnail>
       </AnswerComp>
     );
   }

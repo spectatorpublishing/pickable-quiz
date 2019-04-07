@@ -8,23 +8,28 @@ let QuestionData = [
       "answers":[
          {
             "type":"sporty",
-            "text":"Go for a run"
+            "text":"Go for a run",
+            "image":"testImage.jpeg" 
          },
          {
             "type":"intellectual",
-            "text":"Read a book"
+            "text":"Read a book",
+            "image":"testImage.jpeg" 
          },
          {
             "type":"romantic",
-            "text":"Meet up with friends"
+            "text":"Meet up with friends",
+            "image":"testImage.jpeg" 
          },
          {
             "type":"nature",
-            "text":"Take a walk to Riverside"
+            "text":"Take a walk to Riverside",
+            "image":"testImage.jpeg" 
          },
          {
             "type":"adventurous",
-            "text":"One way swipe downtown"
+            "text":"One way swipe downtown",
+            "image":"testImage.jpeg" 
          }
       ]
    },
@@ -33,23 +38,28 @@ let QuestionData = [
       "answers":[
          {
             "type":"nature",
-            "text":"Pick flowers from the lawn and give them to them"
+            "text":"Pick flowers from the lawn and give them to them",
+            "image":"testImage.jpeg" 
          },
          {
             "type":"romantic",
-            "text":"Bring them soup when they’re sick"
+            "text":"Bring them soup when they’re sick",
+            "image":"testImage.jpeg" 
          },
          {
             "type":"intellectual",
-            "text":"Give them a copy of your favorite book"
+            "text":"Give them a copy of your favorite book",
+            "image":"testImage.jpeg" 
          },
          {
             "type":"adventurous",
-            "text":"Rent a hedgehog and let them pet it"
+            "text":"Rent a hedgehog and let them pet it",
+            "image":"testImage.jpeg" 
          },
          {
             "type":"sporty",
-            "text":"Dedicate a game-winning touchdown to them"
+            "text":"Dedicate a game-winning touchdown to them",
+            "image":"testImage.jpeg" 
          }
       ]
    },
@@ -58,23 +68,28 @@ let QuestionData = [
       "answers":[
          {
             "type":"intellectual",
-            "text":"Butler Library"
+            "text":"Butler Library",
+            "image":"testImage.jpeg" 
          },
          {
             "type":"sporty",
-            "text":"Avery Library"
+            "text":"Avery Library",
+            "image":"testImage.jpeg" 
          },
          {
             "type":"nature",
-            "text":"On the Lawns"
+            "text":"On the Lawns",
+            "image":"testImage.jpeg" 
          },
          {
             "type":"adventurous",
-            "text":"NoCo"
+            "text":"NoCo",
+            "image":"testImage.jpeg" 
          },
          {
             "type":"romantic",
-            "text":"My Room"
+            "text":"My Room",
+            "image":"testImage.jpeg" 
          }
       ]
    },
@@ -83,23 +98,28 @@ let QuestionData = [
       "answers":[
          {
             "type":"sporty",
-            "text":"4:00 am"
+            "text":"4:00 am",
+            "image":"testImage.jpeg" 
          },
          {
             "type":"intellectual",
-            "text":"7:00 am"
+            "text":"7:00 am",
+            "image":"testImage.jpeg" 
          },
          {
             "type":"adventurous",
-            "text":"11:00 am"
+            "text":"11:00 am",
+            "image":"testImage.jpeg" 
          },
          {
             "type":"nature",
-            "text":"4:00 pm "
+            "text":"4:00 pm ",
+            "image":"testImage.jpeg" 
          },
          {
             "type":"romantic",
-            "text":"8:00pm - Disco Nap!"
+            "text":"8:00pm - Disco Nap!",
+            "image":"testImage.jpeg" 
          }
       ]
    },
@@ -108,23 +128,28 @@ let QuestionData = [
       "answers":[
          {
             "type":"sporty",
-            "text":"JJ’s"
+            "text":"JJ’s",
+            "image":"testImage.jpeg" 
          },
          {
             "type":"nature",
-            "text":"Ferris"
+            "text":"Ferris",
+            "image":"testImage.jpeg" 
          },
          {
             "type":"intellectual",
-            "text":"John Jay"
+            "text":"John Jay",
+            "image":"testImage.jpeg" 
          },
          {
             "type":"adventurous",
-            "text":"Diana"
+            "text":"Diana",
+            "image":"testImage.jpeg" 
          },
          {
             "type":"romantic",
-            "text":"I cook in my dorm"
+            "text":"I cook in my dorm",
+            "image":"testImage.jpeg" 
          }
       ]
    },
@@ -133,23 +158,28 @@ let QuestionData = [
       "answers":[
          {
             "type":"sporty",
-            "text":"Dog"
+            "text":"Dog",
+            "image":"testImage.jpeg" 
          },
          {
             "type":"intellectual",
-            "text":"Cat"
+            "text":"Cat",
+            "image":"testImage.jpeg" 
          },
          {
             "type":"adventurous",
-            "text":"Snake"
+            "text":"Snake",
+            "image":"testImage.jpeg" 
          },
          {
             "type":"nature",
-            "text":"Succulent plant"
+            "text":"Succulent plant",
+            "image":"testImage.jpeg" 
          },
          {
             "type":"romantic",
-            "text":"Rabbit"
+            "text":"Rabbit",
+            "image":"testImage.jpeg" 
          }
       ]
    },
@@ -158,23 +188,28 @@ let QuestionData = [
       "answers":[
          {
             "type":"intellectual",
-            "text":"Subway"
+            "text":"Subway",
+            "image":"testImage.jpeg" 
          },
          {
             "type":"adventurous",
-            "text":"Driving"
+            "text":"Driving",
+            "image":"testImage.jpeg" 
          },
          {
             "type":"sporty",
-            "text":"Taxi/Uber"
+            "text":"Taxi/Uber",
+            "image":"testImage.jpeg" 
          },
          {
             "type":"romantic",
-            "text":"On foot"
+            "text":"On foot",
+            "image":"testImage.jpeg" 
          },
          {
             "type":"nature",
-            "text":"Cycling"
+            "text":"Cycling",
+            "image":"testImage.jpeg" 
          }
       ]
    },
@@ -183,23 +218,28 @@ let QuestionData = [
       "answers":[
          {
             "type":"intellectual",
-            "text":"Film Forum"
+            "text":"Film Forum",
+            "image":"testImage.jpeg" 
          },
          {
             "type":"romantic",
-            "text":"The High Line"
+            "text":"The High Line",
+            "image":"testImage.jpeg" 
          },
          {
             "type":"sporty",
-            "text":"Chelsea Piers"
+            "text":"Chelsea Piers",
+            "image":"testImage.jpeg" 
          },
          {
             "type":"nature",
-            "text":"Central Park"
+            "text":"Central Park",
+            "image":"testImage.jpeg" 
          },
          {
             "type":"adventurous",
-            "text":"Top of the Rock "
+            "text":"Top of the Rock ",
+            "image":"testImage.jpeg" 
          }
       ]
    },
@@ -208,23 +248,28 @@ let QuestionData = [
       "answers":[
          {
             "type":"intellectual",
-            "text":"Symbolic Logic"
+            "text":"Symbolic Logic",
+            "image":"testImage.jpeg" 
          },
          {
             "type":"sporty",
-            "text":"PE Karate"
+            "text":"PE Karate",
+            "image":"testImage.jpeg" 
          },
          {
             "type":"adventurous",
-            "text":"Medieval Romance: Beheadings, Magical Underworlds, and other Marvels"
+            "text":"Medieval Romance: Beheadings, Magical Underworlds, and other Marvels",
+            "image":"testImage.jpeg" 
          },
          {
             "type":"nature",
-            "text":"Nature of Animal Minds"
+            "text":"Nature of Animal Minds",
+            "image":"testImage.jpeg" 
          },
          {
             "type":"romantic",
-            "text":"French New Wave Cinema"
+            "text":"French New Wave Cinema",
+            "image":"testImage.jpeg" 
          }
       ]
    },
@@ -233,23 +278,28 @@ let QuestionData = [
       "answers":[
          {
             "type":"sporty",
-            "text":"Green Smoothie"
+            "text":"Green Smoothie",
+            "image":"testImage.jpeg" 
          },
          {
             "type":"nature",
-            "text":"Gorp"
+            "text":"Gorp",
+            "image":"testImage.jpeg" 
          },
          {
             "type":"intellectual",
-            "text":"Ferris Cheesecake"
+            "text":"Ferris Cheesecake",
+            "image":"testImage.jpeg" 
          },
          {
             "type":"romantic",
-            "text":"Chocolate Fondue "
+            "text":"Chocolate Fondue ",
+            "image":"testImage.jpeg" 
          },
          {
             "type":"adventurous",
-            "text":"Kazandibi"
+            "text":"Kazandibi",
+            "image":"testImage.jpeg" 
          }
       ]
    }

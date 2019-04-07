@@ -4,7 +4,6 @@ import Answers from './Answers.js'
 import styled from 'styled-components'
 
 const ArticleBody = styled.div`
-  max-width: 50rem;
   margin: 0 auto;
 `
 
