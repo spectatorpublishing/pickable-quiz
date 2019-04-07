@@ -333,19 +333,16 @@ class Container extends Component {
   select(question) {
     return (answer) => {
       this.setState({[question]: answer})
-      console.log(this.state)
     }
   }
 
   renderResults() {
-
+   
   }
 
   render() {
-    return ([
-         QuestionData.map((i, index) => <QuestionSelectWrapper active={this.state[index]} select={this.select} question={index} questionData={i}/>),
-         <Results/>
-         ]
+    return (
+      QuestionData.map((i, index) => <QuestionSelectWrapper active={this.state[index]} select={this.select} question={index} questionData={i}/>)
     );
   }
 }

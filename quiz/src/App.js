@@ -5,6 +5,7 @@ import Container from './Container';
 import styled from 'styled-components'
 
 const ArticleBody = styled.div`
+  max-width: 50rem;
   margin: 0 auto;
 `
 
@@ -14,10 +15,10 @@ class App extends Component {
     
     return (
       <div>
-      <Header/>
-      <ArticleBody>
-        <Container/>
-      </ArticleBody>
+        <Header/>
+        <ArticleBody>
+          <Container/>
+        </ArticleBody>
       </div>
     );
   }

@@ -23,6 +23,7 @@ display: flex;
 flex-wrap: wrap;
 justify-content: space-evenly;
 `
+
 class AnswerClickWrapper extends Component {
   constructor() {
     super()
@@ -34,7 +35,11 @@ class AnswerClickWrapper extends Component {
   }
 
   render() {
-    return <StyledAnswer {...this.props} onClick={this.handleClick}><Answer answerImage = {this.props.image}>{this.props.children}</Answer></StyledAnswer>
+    return <StyledAnswer {...this.props} onClick={this.handleClick}
+    onMouseEnter= {()=>this.props.handleMouseEnter(this.props.index)}
+    onMouseLeave={()=>this.props.handleMouseLeave()}>
+      <Answer answerImage = {this.props.image}>{this.props.children}</Answer>
+    </StyledAnswer>
   }
 }
 
@@ -43,10 +48,27 @@ class Question extends Component {
   constructor() {
     super()
     this.handleClick = this.handleClick.bind(this)
+    this.handleMouseEnter = this.handleMouseEnter.bind(this)
+    this.handleMouseLeave = this.handleMouseLeave.bind(this)
+    this.state = {
+      hover: -1
+    }
   }
 
   handleClick(i) {
     this.props.select(i)
+  }
+
+  handleMouseEnter(i){
+    this.setState({
+      hover: i
+    })
+  }
+
+  handleMouseLeave(){
+    this.setState({
+      hover: -1
+    })
   }
 
   render() {
@@ -55,7 +77,10 @@ class Question extends Component {
           <StyledQuestion>{this.props.questionData.questionText}</StyledQuestion>
           <AnswersContainer>
             {this.props.questionData.answers.map((i, index) => {
-              return <AnswerClickWrapper {...i} index={index} onClick={this.handleClick}>{i.text}</AnswerClickWrapper>
+              return <AnswerClickWrapper {...i} index={index} onClick={this.handleClick}
+              hover={this.state.hover}
+              handleMouseEnter={this.handleMouseEnter} 
+              handleMouseLeave = {this.handleMouseLeave}>{i.text}</AnswerClickWrapper>
             })}
           </AnswersContainer>
       </div>
