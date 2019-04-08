@@ -39,7 +39,7 @@ let QuestionData = [
       "answers":[
          {
             "type":"nature",
-            "text":"Pick flowers from the lawn and give them to them",
+            "text":"Pick flowers from the lawn to give to them",
             "image":"https://s3.amazonaws.com/spec-imagehosting/B1.jpg+(1200×1800).jpeg" 
          },
          {

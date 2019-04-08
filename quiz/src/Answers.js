@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import styled from "styled-components";
 
 let AnswerComp = styled.div`
-text-align: center;
-display: inline-block;
+width: 100%;
+height: 100%;
 `
 
 let AnswerText = styled.p`
@@ -16,14 +16,14 @@ border-radius: 10px;
 box-sizing: border-box;
 padding: 10px;
 margin: 10px;
-width: 250px;
-height: 250px;
+width: calc(100% - 20px);
+height: calc(100% - 20px);
 position: relative;
 transition: transform .5s;
 background-image: url("${props => props.image}");
 background-size: cover;
 background-position: center;
-&:hover{
+&:hover, &.active{
   transform: scale(1.1);
   background-color: white;
 }
@@ -34,9 +34,10 @@ class Answer extends Component {
     super(props);
   }
   render() {
+    console.log(this.props.active)
     return (
       <AnswerComp>
-      <Thumbnail image = { this.props.answerImage }/>
+      <Thumbnail className={this.props.active} image = { this.props.answerImage }/>
       </AnswerComp>
     );
   }
