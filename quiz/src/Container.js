@@ -337,13 +337,20 @@ class Container extends Component {
   }
 
   renderResults() {
-   
+   console.log(this.state)
+   if (typeof this.state["0"] !== 'undefined' && typeof this.state["1"] !== 'undefined' && typeof this.state["2"] !== 'undefined' && typeof this.state["3"] !== 'undefined' && typeof this.state["4"] !== 'undefined' && typeof this.state["5"] !== 'undefined' && typeof this.state["6"] !== 'undefined' && typeof this.state["7"]  !== 'undefined' && typeof this.state["8"] !== 'undefined' && typeof this.state["9"] !== 'undefined') {
+      return(
+         <Results answers = {this.state}/>
+      )
+   }
   }
 
   render() {
-    return (
-      QuestionData.map((i, index) => <QuestionSelectWrapper active={this.state[index]} select={this.select} question={index} questionData={i}/>)
-    );
+    return ([
+         QuestionData.map((i, index) => <QuestionSelectWrapper active={this.state[index]} select={this.select} question={index} questionData={i}/>),
+         this.renderResults()
+         ]
+   )
   }
 }
 
