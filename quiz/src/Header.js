@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import styled, { css } from 'styled-components'
 import img from './testbackground.jpg'
 
+const Logo = styled.img`
+height: 100px;
+margin-top: 30px;
+display: block;
+`
+
 const Wrapper = styled.header`
     min-height: 30vh;
     display: flex;
@@ -43,6 +49,7 @@ class Header extends Component {
     render() {
         return (
             <Wrapper>
+                <Logo src="https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/F66ZKBYYJZBZ3NIAZJGXWA3NXY.png"/>
                 <Title>
                     What should <Pinktext>your</Pinktext> next date be?
                 </Title>
