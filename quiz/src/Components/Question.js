@@ -20,6 +20,7 @@ const StyledAnswer = styled.div`
   width: 40vw;
   height: 40vw;
 }
+  ${props => props.hover === "hover" ? "flex-shrink: 0.3" : ""}
 `
 
 const AnswersContainer = styled.div`
@@ -28,6 +29,10 @@ const AnswersContainer = styled.div`
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 0 20px;
+
+  @media (max-width: 600px) {
+    flex-wrap: nowrap;
+  }
 `
 
 const PreviewAnswer = styled.div`
@@ -50,10 +55,13 @@ class AnswerClickWrapper extends Component {
 
   render() {
     let {type, ...props} = this.props
-    return <StyledAnswer {...props} onClick={this.handleClick}
+    return <StyledAnswer {...props}
+    onClick={this.handleClick}
     onMouseEnter= {()=>this.props.handleMouseEnter(this.props.index)}
-    onMouseLeave={()=>this.props.handleMouseLeave()}>
-      <Answer active={this.props.active} answerImage = {this.props.image}>{this.props.children}</Answer>
+    onMouseLeave={()=>this.props.handleMouseLeave()}
+    onTouchMove= {this.props.handleTouchMove}
+    hover={this.props.hover}>
+      <Answer hover={this.props.hover} active={this.props.active} index={this.props.index} answerImage = {this.props.image}>{this.props.children}</Answer>
     </StyledAnswer>
   }
 }
@@ -65,6 +73,7 @@ class Question extends Component {
     this.handleClick = this.handleClick.bind(this)
     this.handleMouseEnter = this.handleMouseEnter.bind(this)
     this.handleMouseLeave = this.handleMouseLeave.bind(this)
+    this.handleTouchMove = this.handleTouchMove.bind(this)
     this.state = {
       hover: -1
     }
@@ -84,6 +93,22 @@ class Question extends Component {
     this.setState({
       hover: -1
     })
+  }
+
+  handleTouchMove(e) {
+    var target = document.elementFromPoint(e.changedTouches[0].clientX, e.changedTouches[0].clientY);
+    if (target && target.dataset.index) {
+      this.setState(state => {
+        let index = parseInt(target.dataset.index);
+        if (state.hover !== index) {
+          this.props.select(index)
+          return {
+            hover: index
+          }
+        }
+        else return null
+      })
+    }
   }
 
   render() {
@@ -106,9 +131,10 @@ class Question extends Component {
           <AnswersContainer>
             {this.props.questionData.answers.map((i, index) => {
               return <AnswerClickWrapper {...i} index={index} onClick={this.handleClick}
-              hover={this.state.hover}
+              hover={this.state.hover === index ? "hover": "nohover"}
               handleMouseEnter={this.handleMouseEnter} 
               handleMouseLeave = {this.handleMouseLeave}
+              handleTouchMove={this.handleTouchMove}
               active={this.props.active === index ? "active": "inactive"}>{i.text}</AnswerClickWrapper>
             })}
           </AnswersContainer>
