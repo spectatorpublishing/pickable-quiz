@@ -110,6 +110,11 @@ const Blurbs=[
 ]
 
 const FinalImages = [
+"https://s3.amazonaws.com/spec-imagehosting/Sporty+Date+-+final+result.jpeg",
+"https://s3.amazonaws.com/spec-imagehosting/nature+date+-+final+result.jpg",
+"https://s3.amazonaws.com/spec-imagehosting/Intellectual+Date+-+final+result.jpeg",
+"https://s3.amazonaws.com/spec-imagehosting/adventurous+date+-+final+result.jpg",
+"https://s3.amazonaws.com/spec-imagehosting/romantic+date+-+final+result.jpg"
 ]
 
 class Results extends Component {
@@ -322,7 +327,7 @@ class Results extends Component {
         return (
             <Container>
                 <Title>
-                    {Titles[this.state]}
+                    Your type of date is: {Titles[this.state]}
                 </Title>
                 <PictureContainer>
                     <ImageContainer image={this.props.image}/>

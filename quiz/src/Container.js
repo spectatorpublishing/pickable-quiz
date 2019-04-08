@@ -10,27 +10,27 @@ let QuestionData = [
          {
             "type":"sporty",
             "text":"Go for a run",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/A1.jpg" 
          },
          {
             "type":"intellectual",
             "text":"Read a book",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/A2.jpg" 
          },
          {
             "type":"romantic",
             "text":"Meet up with friends",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/A3.jpg" 
          },
          {
             "type":"nature",
             "text":"Take a walk to Riverside",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/A4.jpg" 
          },
          {
             "type":"adventurous",
             "text":"One way swipe downtown",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/A5.jpg" 
          }
       ]
    },
@@ -40,27 +40,27 @@ let QuestionData = [
          {
             "type":"nature",
             "text":"Pick flowers from the lawn and give them to them",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/B1.jpg+(1200×1800).jpeg" 
          },
          {
             "type":"romantic",
             "text":"Bring them soup when they’re sick",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/B2.jpg+(6000×4000).jpeg" 
          },
          {
             "type":"intellectual",
             "text":"Give them a copy of your favorite book",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/B3.jpg+(4000×2667).jpeg" 
          },
          {
             "type":"adventurous",
             "text":"Rent a hedgehog and let them pet it",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/B4.jpg" 
          },
          {
             "type":"sporty",
             "text":"Dedicate a game-winning touchdown to them",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/B5.jpg" 
          }
       ]
    },
@@ -70,27 +70,27 @@ let QuestionData = [
          {
             "type":"intellectual",
             "text":"Butler Library",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/C-NoCo.png" 
          },
          {
             "type":"sporty",
             "text":"Avery Library",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/C-avery.png" 
          },
          {
             "type":"nature",
             "text":"On the Lawns",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/C-butler.png" 
          },
          {
             "type":"adventurous",
             "text":"NoCo",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/C-dorm.png" 
          },
          {
             "type":"romantic",
             "text":"My Room",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/C-lawn.png" 
          }
       ]
    },
@@ -100,27 +100,27 @@ let QuestionData = [
          {
             "type":"sporty",
             "text":"4:00 am",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/4am.JPG" 
          },
          {
             "type":"intellectual",
             "text":"7:00 am",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/7am.JPG" 
          },
          {
             "type":"adventurous",
             "text":"11:00 am",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/11am.JPG" 
          },
          {
             "type":"nature",
             "text":"4:00 pm ",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/4pm.JPG" 
          },
          {
             "type":"romantic",
             "text":"8:00pm - Disco Nap!",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/8pm.JPG" 
          }
       ]
    },
@@ -130,27 +130,27 @@ let QuestionData = [
          {
             "type":"sporty",
             "text":"JJ’s",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/E1.jpg" 
          },
          {
             "type":"nature",
             "text":"Ferris",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/E2.jpg" 
          },
          {
             "type":"intellectual",
             "text":"John Jay",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/E3.jpg" 
          },
          {
             "type":"adventurous",
             "text":"Diana",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/E4.jpg" 
          },
          {
             "type":"romantic",
             "text":"I cook in my dorm",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/E5.jpg" 
          }
       ]
    },
@@ -160,27 +160,27 @@ let QuestionData = [
          {
             "type":"sporty",
             "text":"Dog",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/F1.jpg" 
          },
          {
             "type":"intellectual",
             "text":"Cat",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/F2.jpg" 
          },
          {
             "type":"adventurous",
             "text":"Snake",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/F3.jpg" 
          },
          {
             "type":"nature",
             "text":"Succulent plant",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/F4.jpg" 
          },
          {
             "type":"romantic",
             "text":"Rabbit",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/F5.jpg" 
          }
       ]
    },
@@ -190,27 +190,27 @@ let QuestionData = [
          {
             "type":"intellectual",
             "text":"Subway",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/G1.jpg" 
          },
          {
             "type":"adventurous",
             "text":"Driving",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/G2.jpg" 
          },
          {
             "type":"sporty",
             "text":"Taxi/Uber",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/G3.jpg" 
          },
          {
             "type":"romantic",
             "text":"On foot",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/G4.jpg" 
          },
          {
             "type":"nature",
             "text":"Cycling",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/G5.jpg" 
          }
       ]
    },
@@ -220,27 +220,27 @@ let QuestionData = [
          {
             "type":"intellectual",
             "text":"Film Forum",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/H1.jpg" 
          },
          {
             "type":"romantic",
             "text":"The High Line",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/H2.jpg" 
          },
          {
             "type":"sporty",
             "text":"Chelsea Piers",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/H3.jpg" 
          },
          {
             "type":"nature",
             "text":"Central Park",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/H4.jpg" 
          },
          {
             "type":"adventurous",
             "text":"Top of the Rock ",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/H5.jpg" 
          }
       ]
    },
@@ -250,7 +250,7 @@ let QuestionData = [
          {
             "type":"intellectual",
             "text":"Symbolic Logic",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/I1.jpg" 
          },
          {
             "type":"sporty",
@@ -260,17 +260,17 @@ let QuestionData = [
          {
             "type":"adventurous",
             "text":"Medieval Romance: Beheadings, Magical Underworlds, and other Marvels",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/I3.jpg" 
          },
          {
             "type":"nature",
             "text":"Nature of Animal Minds",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/I4.jpg" 
          },
          {
             "type":"romantic",
             "text":"French New Wave Cinema",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/I5.jpg" 
          }
       ]
    },
@@ -280,27 +280,27 @@ let QuestionData = [
          {
             "type":"sporty",
             "text":"Green Smoothie",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/J1.jpg" 
          },
          {
             "type":"nature",
             "text":"Gorp",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/J2.jpg" 
          },
          {
             "type":"intellectual",
             "text":"Ferris Cheesecake",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/J3.jpg" 
          },
          {
             "type":"romantic",
             "text":"Chocolate Fondue ",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/J4.jpg" 
          },
          {
             "type":"adventurous",
             "text":"Kazandibi",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/J5.jpg" 
          }
       ]
    }
