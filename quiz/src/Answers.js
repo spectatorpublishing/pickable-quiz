@@ -23,7 +23,7 @@ transition: transform .5s;
 background-image: url("${props => props.image}");
 background-size: cover;
 background-position: center;
-&:hover, &.active{
+&:hover, &.active, &.hover {
   transform: scale(1.1);
   background-color: white;
 }
@@ -34,10 +34,9 @@ class Answer extends Component {
     super(props);
   }
   render() {
-    console.log(this.props.active)
     return (
       <AnswerComp>
-      <Thumbnail className={this.props.active} image = { this.props.answerImage }/>
+      <Thumbnail data-index={this.props.index} className={`${this.props.active} ${this.props.hover}`} image = { this.props.answerImage }/>
       </AnswerComp>
     );
   }
