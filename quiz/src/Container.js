@@ -70,7 +70,7 @@ let QuestionData = [
          {
             "type":"intellectual",
             "text":"Butler Library",
-            "image":"https://s3.amazonaws.com/spec-imagehosting/C-NoCo.png" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/C-butler.png" 
          },
          {
             "type":"sporty",
@@ -80,17 +80,17 @@ let QuestionData = [
          {
             "type":"nature",
             "text":"On the Lawns",
-            "image":"https://s3.amazonaws.com/spec-imagehosting/C-butler.png" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/C-lawn.png" 
          },
          {
             "type":"adventurous",
             "text":"NoCo",
-            "image":"https://s3.amazonaws.com/spec-imagehosting/C-dorm.png" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/C-NoCo.png" 
          },
          {
             "type":"romantic",
             "text":"My Room",
-            "image":"https://s3.amazonaws.com/spec-imagehosting/C-lawn.png" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/C-dorm.png" 
          }
       ]
    },
@@ -130,7 +130,7 @@ let QuestionData = [
          {
             "type":"sporty",
             "text":"JJ’s",
-            "image":"https://s3.amazonaws.com/spec-imagehosting/E1.jpg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/E3.jpg" 
          },
          {
             "type":"nature",
@@ -140,7 +140,7 @@ let QuestionData = [
          {
             "type":"intellectual",
             "text":"John Jay",
-            "image":"https://s3.amazonaws.com/spec-imagehosting/E3.jpg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/E1.jpg" 
          },
          {
             "type":"adventurous",
@@ -255,7 +255,7 @@ let QuestionData = [
          {
             "type":"sporty",
             "text":"PE Karate",
-            "image":"testImage.jpeg" 
+            "image":"https://s3.amazonaws.com/spec-imagehosting/I2.jpg" 
          },
          {
             "type":"adventurous",

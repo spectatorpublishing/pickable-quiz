@@ -7,15 +7,19 @@ flex-direction: column;
 background-color: #EC2058;
 justify-content: center;
 width: 70vw;
+max-width: 1000px;
 margin: auto;
-height: auto;
+margin-top: 30px;
+margin-bottom: 30px;
 border-radius: 10px;
+@media (max-width: 768px) {
+  width: 90vw;
+}
 `
 
 const Title = styled.div`
 text-align: center;
-margin-bottom: 20px;
-padding: 10px;
+padding: 20px 0;
 width: 100%;
 color: white;
 font-size: 2rem;
@@ -33,11 +37,13 @@ height: auto;
 `
 
 const ImageContainer = styled.div`
-height: 200px;
+height: 250px;
 width: 50%;
 background-image: url("${props => props.image}");
+background-size: cover;
+background-position: center;
 border-radius: 10px;
-
+margin: 20px;
 @media (max-width: 768px) {
   width: 80%;
   margin-left: 10%;
@@ -46,7 +52,7 @@ border-radius: 10px;
 
 const CaptionContainer = styled.div`
 width: 50%;
-padding-bottom: 15px;
+padding: 15px 0;
 flex: 1;
 flex-direction: column;
 align-items: center;
@@ -58,15 +64,16 @@ color: white;
 `
 
 const Description = styled.div`
-height: 50%;
-padding: 0 15px 20px 15px;
-width: 100%;
+padding-bottom: 30px;
+width: 90%;
 font-size: 1rem;
+margin-left: 5%;
 `
 
 const ButtonContainer = styled.div`
 height: 40%;
 display: block;
+padding-bottom: 30px;
 `
 
 const Pickable = styled.button`
@@ -330,7 +337,7 @@ class Results extends Component {
                     Your type of date is: {Titles[this.state]}
                 </Title>
                 <PictureContainer>
-                    <ImageContainer image={this.props.image}/>
+                    <ImageContainer image={FinalImages[this.state]}/>
                     <CaptionContainer>
                         <Description>
                           {Blurbs[this.state]}
