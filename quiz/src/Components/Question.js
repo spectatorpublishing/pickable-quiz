@@ -16,13 +16,18 @@ const StyledAnswer = styled.div`
   box-sizing: border-box;
   width: 250px;
   height: 250px;
+@media (max-width: 749px) {
+  width: 40vw;
+  height: 40vw;
+}
 `
 
 const AnswersContainer = styled.div`
-  width: 100%;
+  max-width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  padding: 0 20px;
 `
 
 const PreviewAnswer = styled.div`
@@ -30,7 +35,7 @@ const PreviewAnswer = styled.div`
   font-size: 1.5rem;
   font-weight: 100;
   text-align: center;
-  margin: 0 auto 1rem auto;
+  margin: 0 auto 1.5rem auto;
 `
 
 class AnswerClickWrapper extends Component {
