@@ -14,6 +14,8 @@ const StyledQuestion = styled.div`
 
 const StyledAnswer = styled.div`
   box-sizing: border-box;
+  width: 250px;
+  height: 250px;
 `
 
 const AnswersContainer = styled.div`
@@ -24,7 +26,7 @@ const AnswersContainer = styled.div`
 `
 
 const PreviewAnswer = styled.div`
-  height: 2rem;
+  height: 3rem;
   font-size: 1.5rem;
   font-weight: 100;
   text-align: center;
@@ -42,10 +44,11 @@ class AnswerClickWrapper extends Component {
   }
 
   render() {
-    return <StyledAnswer {...this.props} onClick={this.handleClick}
+    let {type, ...props} = this.props
+    return <StyledAnswer {...props} onClick={this.handleClick}
     onMouseEnter= {()=>this.props.handleMouseEnter(this.props.index)}
     onMouseLeave={()=>this.props.handleMouseLeave()}>
-      <Answer answerImage = {this.props.image}>{this.props.children}</Answer>
+      <Answer active={this.props.active} answerImage = {this.props.image}>{this.props.children}</Answer>
     </StyledAnswer>
   }
 }
@@ -100,7 +103,8 @@ class Question extends Component {
               return <AnswerClickWrapper {...i} index={index} onClick={this.handleClick}
               hover={this.state.hover}
               handleMouseEnter={this.handleMouseEnter} 
-              handleMouseLeave = {this.handleMouseLeave}>{i.text}</AnswerClickWrapper>
+              handleMouseLeave = {this.handleMouseLeave}
+              active={this.props.active === index ? "active": "inactive"}>{i.text}</AnswerClickWrapper>
             })}
           </AnswersContainer>
       </div>

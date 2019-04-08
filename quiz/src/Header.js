@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components'
 import img from './testbackground.jpg'
 
 const Wrapper = styled.header`
-    height: 50vh;
+    min-height: 50vh;
     display: flex;
     align-content: flex-start;
     justify-content: center;
